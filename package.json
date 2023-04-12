@@ -1,7 +1,6 @@
 {
   "name": "parcel-project-template",
   "version": "2.0.0",
-  "main": "index.html",
   "description": "",
   "homepage": "https://akhsudop.github.io/hw-js-03",
   "scripts": {
