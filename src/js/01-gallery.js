@@ -6,32 +6,32 @@ import '../css/common.css';
 import '../css/01-gallery.css';
 // Change code below this line
 
-// const gallery = document.querySelector('.gallery');
+const gallery = document.querySelector('.gallery');
 
-// const createGallery = array => {
-//   const items = array
-//     .map(
-//       n => `<li>
-//   <a class="gallery__link" href="${n.original}">
-//     <img
-//       class="gallery__image"
-//       src="${n.preview}"
-//       alt="${n.description}"
-//     />
-//   </a>
-// </li>`
-//     )
-//     .join('');
+const createGallery = array => {
+  const items = array
+    .map(
+      n => `<li>
+  <a class="gallery__link" href="${n.original}">
+    <img
+      class="gallery__image"
+      src="${n.preview}"
+      alt="${n.description}"
+    />
+  </a>
+</li>`
+    )
+    .join('');
 
-//   gallery.insertAdjacentHTML('afterbegin', items);
-// };
+  gallery.insertAdjacentHTML('afterbegin', items);
+};
 
-// createGallery(galleryItems);
+createGallery(galleryItems);
 
-// const lightbox = new SimpleLightbox('.gallery a', {
-//   captionsData: 'alt',
-//   captionPosition: 'bottom',
-//   captionDelay: 250,
-// });
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionPosition: 'bottom',
+  captionDelay: 250,
+});
 
-// console.log(galleryItems);
+console.log(galleryItems);
